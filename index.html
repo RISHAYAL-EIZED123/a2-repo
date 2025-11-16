@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MYRobo — Mini Learning & Home Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page" id="container">
+
+    <!-- Header -->
+    <header class="site-header" id="header">
+      <div class="brand" role="banner">
+        <h1><strong>MYRobo</strong></h1>
+        <p class="subtitle"><em>A Mini Robot To Assist You — Learning & Day-to-Day Tasks Expert</em></p>
+      </div>
+
+      <div class="header-controls">
+        <label class="switch" for="demo-switch">
+          <input id="demo-switch" type="checkbox" role="switch" aria-checked="false" />
+          <span class="switch-track" aria-hidden="true"></span>
+          <span class="switch-label">Assist Mode</span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="layout" id="main" role="main">
+
+      <!-- Sidebar / Features -->
+      <aside class="sidebar" id="sidebar" aria-labelledby="features-heading">
+        <h2 id="features-heading"><strong>Main Features</strong></h2>
+
+        <!-- Features with Image (RIGHT) -->
+        <div class="features-with-image">
+          <ul class="features-list" role="list">
+            <li>Helps with homework</li>
+            <li>Assists in household chores</li>
+            <li>Easy to handle</li>
+            <li>Long-lasting battery</li>
+          </ul>
+
+          <div class="features-image">
+            <!-- ADD YOUR IMAGE FILE NAME HERE -->
+            <img src="C:\Users\Al Aziz Tech\Desktop\picture3.jpg" alt="MYRobo Main Features Image">
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" aria-label="More about MYRobo">
+          <h3 class="sr-only">More Info</h3>
+
+          <div class="accordion-item">
+            <input type="checkbox" id="acc-1" class="acc-toggle" />
+            <label for="acc-1" class="acc-title">Safety & Privacy</label>
+            <div class="acc-panel" role="region" aria-labelledby="acc-1">
+              MYRobo stores no sensitive audio; local processing prioritized. Parental controls included.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <input type="checkbox" id="acc-2" class="acc-toggle" />
+            <label for="acc-2" class="acc-title">Battery & Charging</label>
+            <div class="acc-panel" role="region" aria-labelledby="acc-2">
+              ~12 hours typical use. Magnetic charging dock included.
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <section class="content" id="content" aria-labelledby="description-heading">
+
+        <!-- Description with Image (RIGHT) -->
+        <article class="post post-with-image" aria-labelledby="description-heading">
+          <div class="description-text">
+            <h2 id="description-heading" class="post-title">Description</h2>
+            <p class="Description">
+              MYRobo is a mini robot designed to assist learners and families with small tasks and 
+              tutoring students in homework. It’s simple, safe, and built with approachable AI features.
+            </p>
+          </div>
+
+          <div class="description-image">
+            <!-- ADD YOUR IMAGE FILE NAME HERE -->
+            <img src="C:\Users\Al Aziz Tech\Desktop\picture1.jpg" alt="MYRobo Description Image">
+          </div>
+        </article>
+
+        <!-- Tabs -->
+        <div class="tabs" role="tablist" aria-label="MYRobo tabs">
+          <input id="tab-1" type="radio" name="tabs" checked class="tab-radio" />
+          <label for="tab-1" role="tab" aria-controls="panel-1" tabindex="0">Specs</label>
+
+          <input id="tab-2" type="radio" name="tabs" class="tab-radio" />
+          <label for="tab-2" role="tab" aria-controls="panel-2" tabindex="0">Use Cases</label>
+
+          <input id="tab-3" type="radio" name="tabs" class="tab-radio" />
+          <label for="tab-3" role="tab" aria-controls="panel-3" tabindex="0">Reviews</label>
+
+          <div id="panel-1" class="tab-panel" role="tabpanel" aria-labelledby="tab-1">
+            <ul>
+              <li>Size: 30cm × 20cm</li>
+              <li>Connectivity: Bluetooth</li>
+            </ul>
+          </div>
+
+          <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2">
+            <p>Homework prompts, flashcards, schedule reminders, basic tidy tasks (small item pickup).</p>
+          </div>
+
+          <div id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3">
+            <p>"Amazing product. Very helpful." - User123</p>
+          </div>
+        </div>
+
+        <!-- Smart Form -->
+        <section class="form-section" aria-labelledby="form-heading">
+          <h2 id="form-heading">Join the MYRobo Community — for Order and Joining</h2>
+
+          <form id="signup-form" class="smart-form" action="#" method="post" novalidate>
+
+            <!-- Name & Email -->
+            <div class="field-row">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required placeholder="Your full name" aria-required="true" />
+            </div>
+            <div class="field-row">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" required placeholder="customer@gmail.com" aria-required="true" />
+            </div>
+
+            <!-- Checkboxes simple -->
+            <fieldset class="fieldset" aria-required="false">
+              <legend>I'm interested in (pick any)</legend>
+              <label><input type="checkbox" name="interest" value="homework" /> Homework help</label>
+              <label><input type="checkbox" name="interest" value="chores" /> Chore assistance</label>
+              <label><input type="checkbox" name="interest" value="tutoring" /> Personal tutoring</label>
+            </fieldset>
+
+            <!-- Radio buttons simple -->
+            <fieldset class="fieldset">
+              <legend>Preferred plan</legend>
+              <label><input type="radio" name="plan" value="basic" checked /> Basic</label>
+              <label><input type="radio" name="plan" value="pro" /> Pro</label>
+            </fieldset>
+
+            <!-- Select -->
+            <div class="field-row">
+              <label for="age-range">Your age group</label>
+              <select id="age-range" name="age-range" aria-label="Age group">
+                <option value="">Select an option</option>
+                <option value="child">Under 13</option>
+                <option value="teen">13–17</option>
+                <option value="adult">18–40</option>
+                <option value="older">41+</option>
+              </select>
+            </div>
+
+            <!-- Notes -->
+            <div class="field-row">
+              <label for="notes">Tell us your opinioin to improve MYRobo as it matters the most to us!</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Short note..." aria-label="Notes"></textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="actions">
+              <button type="submit" class="btn-primary">Join Waitlist</button>
+              <button type="reset" class="btn-secondary">Reset</button>
+            </div>
+          </form>
+        </section>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <p>© 2025 MYRobo — All Rights Reserved</p>
+      <p class="sr-only">Contact: project@myrobo.example (demo only)</p>
+    </footer>
+  </div>
+</body>
+</html>
